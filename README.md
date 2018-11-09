@@ -6,7 +6,7 @@
 
 Automatically login and run a command, then filter the result with your own code.
 
-<b>SETUP YOUR CREDS IN CONNECT!</b>
+## SETUP YOUR CREDS IN CONNECT!
 ```bash
 set hostname "HOSTNAME";
 set hub "HUB";
