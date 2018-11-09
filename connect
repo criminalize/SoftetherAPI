@@ -1,0 +1,60 @@
+#!/usr/bin/expect -f
+
+
+
+set command [lindex $argv 0];
+
+set hostname "HOSTNAME";
+
+set hub "HUB";
+
+set password "PASSWORD";
+
+
+
+set timeout -1
+
+
+
+spawn /usr/local/vpnserver/vpncmd
+
+
+
+expect "Select 1, 2 or 3: "
+
+send -- "1\n"
+
+
+
+expect "Hostname of IP Address of Destination: "
+
+send -- "$hostname\n"
+
+
+
+expect "Specify Virtual Hub Name: "
+
+send -- "$hub\n"
+
+
+
+expect "Password: "
+
+send -- "$password\n"
+
+
+
+expect "VPN Server/VPN>"
+
+send -- "$command\n"
+
+
+
+expect "VPN Server/VPN>"
+
+send -- "exit\n"
+
+
+
+expect eof
+
