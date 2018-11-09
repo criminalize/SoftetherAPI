@@ -5,3 +5,10 @@
 >Scripts that allow you to setup autobuy and stuff on Softether!
 
 Automatically login and run a command, then filter the result with your own code.
+
+<b>SETUP YOUR CREDS IN CONNECT!</b>
+```bash
+set hostname "HOSTNAME";
+set hub "HUB";
+set password "PASSWORD";
+```
